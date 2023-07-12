@@ -59,9 +59,7 @@ let prompt = require('prompt-sync')()
 // }
 
 
-const pNUm = prompt("Digite o primeiro numero: ")
-const sNUm = prompt("Digite o segundo numero: ")
 
-const soma = pNUm + sNUm;
 
-console.log("A soma é: " + soma)
+
+
