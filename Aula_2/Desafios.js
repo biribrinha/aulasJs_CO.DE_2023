@@ -107,20 +107,20 @@ let prompt = require('prompt-sync')()
 // 5.0 e 7,0 ou a mensagem de REPROVADO para média inferior a 5,0.
 
 
-let valor1 = parseInt(prompt("Nota 1: "))
-let valor2 = parseInt(prompt("Nota 2: "))
-let valor3 = parseInt(prompt("Nota 3: "))
-let valor4 = parseInt(prompt("Nota 4: "))
+// let valor1 = parseInt(prompt("Nota 1: "))
+// let valor2 = parseInt(prompt("Nota 2: "))
+// let valor3 = parseInt(prompt("Nota 3: "))
+// let valor4 = parseInt(prompt("Nota 4: "))
 
-media = (valor1 + valor2 + valor3 + valor4) / 4;
+// media = (valor1 + valor2 + valor3 + valor4) / 4;
 
-if (media >= 7) {
+// if (media >= 7) {
 
-    console.log("Parabéns! Vc passou com a média de " + media)
+//     console.log("Parabéns! Vc passou com a média de " + media)
 
-} else if (media >= 5 && media < 7) {
+// } else if (media >= 5 && media < 7) {
 
-    console.log("recuperacao, da pra se salvar dessa media de " + media)
-} else {
-    console.log("nao passou, a media de " + media + " é insuficiente ")
-}
+//     console.log("recuperacao, da pra se salvar dessa media de " + media)
+// } else {
+//     console.log("nao passou, a media de " + media + " é insuficiente ")
+// }
