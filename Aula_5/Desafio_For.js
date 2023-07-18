@@ -39,4 +39,21 @@ for (let contador = 1; contador < 10; contador++) {
 }
 
 
-//5. Imprimir os primeiros 10 números da sequência de Fibonacci. (1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181...)
+//5. Imprimir os primeiros 10 números da sequência de Fibonacci. (0, 1, 1, 2, 3, 5, 8...)
+
+
+let numAnterior = 0;
+
+let numAtual = 1;
+
+console.log(numAnterior);
+console.log(numAtual);
+
+for (let contador = 0; contador < 10; contador++) {
+
+    let proximoNumero = numAnterior + numAtual;
+
+    numAnterior = numAtual;
+    numAtual = proximoNumero;
+    console.log(proximoNumero);
+}
