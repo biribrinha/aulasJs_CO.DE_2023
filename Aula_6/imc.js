@@ -14,8 +14,8 @@ export function imc() {
 
 
     pessoa.nome = prompt("Qual seu nome? ")
-    pessoa.altura = parseFloat(prompt("Sua altura: "))
-    pessoa.peso = parseFloat(prompt("Seu peso: "))
+    pessoa.altura = parseFloat(prompt("Sua altura (ex: 1.60) :  "))
+    pessoa.peso = parseFloat(prompt("Seu peso:  "))
 
     imc = pessoa.peso / (pessoa.altura * pessoa.altura)
 

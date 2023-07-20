@@ -1,6 +1,16 @@
 import PromptSync from "prompt-sync";
 
-import { imc } from "./exercicios.js";
+import { imc } from "./imc.js";
+
+import { salarioMaior } from "./salario.js";
+
+import { senha } from "./senha.js";
+
+import { aluno } from "./aluno.js";
+
+import { ordemCres } from "./ordemCrescente.js";
+
+import { fibonacci } from "./fibonacci.js";
 
 const prompt = PromptSync();
 
@@ -16,31 +26,29 @@ do {
 
     switch (exercicio) {
         case 1:
-            helloWord("Hello Word!!!!!!!");
+            fibonacci();
             break;
+
         case 2:
-            let aluno = {
-                nome: "Ju",
-                idade: 22,
-                hardSkills: [
-                    "figma", // 0
-                    "HTML", // 1
-                    "CSS", // 2
-                    "Web Responsividade" // 3
-                ]
-            }
-
-            console.log(aluno.nome, aluno.idade, aluno.hardSkills);
-            console.log(aluno.hardSkills[2]);
-            console.log("aluno objeto", aluno);
+            aluno();
             break;
-        case 3:
 
+        case 3:
             imc();
             break;
-        case 4:
 
+        case 4:
+            salarioMaior();
             break;
+
+        case 5:
+            senha();
+            break;
+
+        case 6:
+            ordemCres();
+            break;
+
         default:
             console.log("De 1 a 4!!!!!!");
             break;
@@ -53,10 +61,5 @@ do {
 
 //toLocaleLowerCase pra manter o padrao pra receber tudo em leta minuscula
 
-
-
-function helloWord(frase) {
-    console.log(frase);
-}
 
 
