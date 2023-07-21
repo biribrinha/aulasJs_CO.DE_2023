@@ -21,7 +21,8 @@ let exercicio;
 let continuar;
 
 do {
-    exercicio = parseInt(prompt("Digite um número que represente um exercício de 1 a 4: "));
+
+    exercicio = parseInt(prompt("Digite um número que represente um exercício de 1 a 6: "));
 
 
     switch (exercicio) {
@@ -50,7 +51,7 @@ do {
             break;
 
         default:
-            console.log("De 1 a 4!!!!!!");
+            console.log("De 1 a 6!!!!!!");
             break;
     }
 

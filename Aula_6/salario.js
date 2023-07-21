@@ -11,7 +11,8 @@ export function salarioMaior() {
     let funcionario = {
         nome: "",
         cargo: 0,
-        salario: 0
+        salario: 0,
+        aumento: 0
     }
 
     funcionario.nome = prompt("Diga seu nome: ")
@@ -21,8 +22,8 @@ export function salarioMaior() {
 
     if (funcionario.salario < 1000) {
 
-        aumento = funcionario.salario + (funcionario.salario * acrescido / 100)
-        console.log("Parabens pela promocao, " + funcionario.nome + " seu salario agora e " + aumento + " reais, te tornando um " + funcionario.cargo + " feliz")
+        funcionario.aumento = funcionario.salario + (funcionario.salario * acrescido / 100)
+        console.log("Parabens pela promocao, " + funcionario.nome + " seu salario agora e " + funcionario.aumento + " reais, te tornando um " + funcionario.cargo + " feliz")
 
     } else {
 
